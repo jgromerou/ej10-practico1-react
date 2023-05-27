@@ -1,6 +1,6 @@
 import { Card, Form, Button } from 'react-bootstrap';
 import './form-pelicula.css';
-import GridPelicula from '../GridPelicula/GridPelicula';
+import GridPelicula from '../GridPelicula';
 import { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 
@@ -108,7 +108,7 @@ const FormPelicula = () => {
           </Form>
         </Card.Body>
       </Card>
-      <GridPelicula />
+      <GridPelicula listaPeliculas={listaPeliculas} />
     </>
   );
 };
