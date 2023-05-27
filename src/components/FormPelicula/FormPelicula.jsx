@@ -23,16 +23,17 @@ const FormPelicula = () => {
 
             <Form.Group className="mb-4" controlId="descripcionPelicula">
               <Form.Label className="fw-bold">Descripción</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Ingrese descripción de la Película"
-              />
+              <Form.Control as="textarea" rows={3} />
             </Form.Group>
 
-            {/* TODO: hacer el genero select */}
-            <Form.Group className="mb-4" controlId="generoPelicula">
-              <Form.Label className="fw-bold">Género:</Form.Label>
-              <Form.Control type="text" placeholder="Seleccione el género" />
+            <Form.Group className="mb-4" controlId="generoPelícula">
+              <Form.Label className="fw-bold">Género</Form.Label>
+              <Form.Select className="mb-4" aria-label="generoSelect">
+                <option>Selecciione una opción:</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Drama">Drama</option>
+                <option value="Infantil">Infantil</option>
+              </Form.Select>
             </Form.Group>
 
             <Button variant="info" type="submit" className="my-2 w-100">
