@@ -1,4 +1,4 @@
-import { Card, Form, Button } from 'react-bootstrap';
+import { Card, Form, Button, Alert } from 'react-bootstrap';
 import './form-pelicula.css';
 import GridPelicula from '../GridPelicula';
 import { useState, useEffect } from 'react';
